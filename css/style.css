@@ -1,3 +1,13 @@
+.aboutImg {
+    width: 35%;
+   
+}
+
+.about {
+   float: right;
+}
+
+
 .projectsArea {
     padding: 10px;
     margin: 10px 5px 10px 5px;
@@ -23,6 +33,10 @@ footer {
     bottom: 0;
     font: 28px;
 }
+
+
+
+
 
 .clearfix::after {
     content:"";
