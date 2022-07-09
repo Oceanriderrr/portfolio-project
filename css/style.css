@@ -1,3 +1,18 @@
+@font-face {
+    font-family: 'Rubik', sans-serif;
+    src: url("fonts/Rubik-Regular.ttf");
+}
+
+.main {
+    background-color: #007cc0;
+    font-family: 'Rubik', sans-serif;
+}
+.title {
+    text-align: center;
+}
+
+
+
 .aboutImg {
     width: 35%;
    
@@ -9,6 +24,8 @@
 
 
 .projectsArea {
+    background-color: #203647;
+    color: #4da8da;
     padding: 10px;
     margin: 10px 5px 10px 5px;
     border: 2px solid black;
@@ -17,21 +34,25 @@
 }
 
 .project {
+    background-color: #4da8da;
+    color: #12232e;
     float: left;
     width: 48%;
-    border: 2px solid blue;
+    border: 2px solid #007cc7;
     margin: 5px;
     height: 200px;
     border-radius: 12px;
 }
-footer {
+.links {
     height:30px;
     width: 100%;
     margin: 0;
-    background-color: lightblue;
+    background-color: #4da8da;
+    border-radius: 5px;
     /* position: fixed; */
     bottom: 0;
     font: 28px;
+    text-align: center;
 }
 
 
@@ -42,4 +63,49 @@ footer {
     content:"";
     display:block;
     clear: both;
+}
+
+/*For Tablet*/
+@media only screen and (max-width: 865px) {
+    .projectsArea {
+        
+        padding: 10px;
+        margin: 10px 5px 10px 5px;
+      
+        border-radius: 12px;
+        
+    }
+    
+    .project {
+       
+        text-align: center;
+        width: 90%;
+        
+        margin: 5px;
+        height: 150px;
+        border-radius: 12px;
+    }
+}
+
+/*For phone*/
+@media only screen and (max-width: 440px) {
+    .projectsArea {
+        background-color: #1a9db0;
+        padding: 10px;
+        margin: 10px 5px 10px 5px;
+        border: 2px solid black;
+        border-radius: 12px;
+        
+    }
+    
+    .project {
+        background-color: #eee;
+        float: left;
+        width: 95%;
+        border: 2px solid blue;
+        margin: 5px;
+        height: 200px;
+        border-radius: 12px;
+        text-align: center;
+    }
 }
